@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Button from './Button';
+import Form from './Form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const myFunc = () => {
+  alert("alert desde el padre"); 
+}
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <Button text="Click me!" functionToExecute={myFunc} /> */}
+    <Form />
   </React.StrictMode>
 );
 
