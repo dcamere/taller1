@@ -3,18 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Button from './Button';
-import Form from './Form';
+// import Button from './Button';
+// import Form from './Form';
+// import Hacked from './Hacked'
+import Pointer from './Pointer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const myFunc = () => {
-  alert("alert desde el padre"); 
-}
+// const myFunc = () => {
+//   alert("alert desde el padre"); 
+// }
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Button text="Click me!" functionToExecute={myFunc} /> */}
-    <Form />
+    {/* <Form /> */}
+    <Pointer />
   </React.StrictMode>
 );
 
